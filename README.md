@@ -1,45 +1,42 @@
 # Admin App
 
-##Technologies used:
+## Technologies used:
 - Spring Boot
 - Angular
 - MySql
 - Maven
+
+ ## How It Works
+ 
+User Interaction:
+Users can create, view, update, and delete employee records through the Angular frontend.
+Profile photos can be uploaded and viewed in Base64 format.
+
+Data Flow:
+The Angular app sends requests to the Spring Boot backend, which processes and stores data in MySQL.
+The backend handles data operations and returns responses to the frontend.
   
-## This project have some requirements: 
-![image](https://github.com/user-attachments/assets/a4e6358a-3fd2-42bb-aada-e959b375c735)
+## Images showing app running
+### Home page: 
+![image](https://github.com/user-attachments/assets/a5f6676b-3b5b-48ec-85cf-e87f109110c0)
 
+### Search Functionality
+![image](https://github.com/user-attachments/assets/bbd3f276-e410-4c48-86e7-87db93c79080)
 
-## There are 4 tests: 
-- [Test1](#test1)
-- [Test2](#test2)
-- [Test3](#test3)
-- [Test4](#test4)
+### Showing all profiles 
+![image](https://github.com/user-attachments/assets/d0c23a5c-3d13-40b6-b46d-5a93a7efbe74)
 
+### Create a new profile
+![image](https://github.com/user-attachments/assets/de735424-89c9-4d5b-8167-bede903fe29f)
 
-## Test1
-![image](https://github.com/user-attachments/assets/34ef2562-3c98-4b7f-96a8-c09bad9fdafd)
+### View Profile
+![image](https://github.com/user-attachments/assets/aac023fb-98e4-499a-943d-bc0760651dd8)
 
+### Delete profile
+![image](https://github.com/user-attachments/assets/c5b6fa8f-1542-4491-b72d-c6256544cb81)
 
-## Test2
-![image](https://github.com/user-attachments/assets/c596056e-740b-4086-ae32-69ba06cd61e6)
-
-
-## Test3
-![image](https://github.com/user-attachments/assets/4113f39b-669c-4eec-8976-29e399d1b2fd)
-
-
-## Test4
-![image](https://github.com/user-attachments/assets/68d51df2-cf84-40be-8e79-2dfce1873408)
-![image](https://github.com/user-attachments/assets/d660dbf8-43a1-4044-a138-0dbb4328bfc3)
-![image](https://github.com/user-attachments/assets/90f63c8a-838c-40eb-ae60-49352d59b6ee)
-![image](https://github.com/user-attachments/assets/d167b3b9-37dd-4ab0-9d43-d897c5f5ab2c)
-![image](https://github.com/user-attachments/assets/0edab750-fe42-4faa-be0c-d6c4cd8f27a3)
-
-
-
-
-
+### Update Profile 
+![image](https://github.com/user-attachments/assets/e0be9962-35ce-481e-84f9-a66fe90300e1)
 
 
 
