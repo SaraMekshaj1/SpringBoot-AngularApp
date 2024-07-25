@@ -1,0 +1,45 @@
+<div class="card">
+    <div class="card-header">
+      <h3>Developer Details</h3>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img [src]="employee.profilePhoto" alt="Profile Photo" class="img-fluid rounded-circle" *ngIf="employee.profilePhoto">
+        </div>
+        <div class="col-md-8">
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <th>First Name:</th>
+                <td>{{employee.firstName}}</td>
+              </tr>
+              <tr>
+                <th>Last Name:</th>
+                <td>{{employee.lastName}}</td>
+              </tr>
+              <tr>
+                <th>Email:</th>
+                <td>{{employee.emailId}}</td>
+              </tr>
+              <tr>
+                <th>Skills:</th>
+                <td>{{employee.skills}}</td>
+              </tr>
+              <tr>
+                <th>Years of Experience:</th>
+                <td>{{employee.experience}}</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <button class="btn btn-primary me-2" (click)="updateEmployee(employee.id)">Update</button>
+                  <button class="btn btn-danger" (click)="confirmDelete(employee.id)">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  

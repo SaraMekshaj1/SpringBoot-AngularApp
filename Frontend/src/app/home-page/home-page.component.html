@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="search-container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <form class="form-inline">
+          <div class="form-group d-flex w-100">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search by Experience, Name, or Skill"
+              [(ngModel)]="searchQuery"
+              name="searchQuery"
+            />
+            <button type="button" class="btn btn-primary" (click)="search()">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="button-container">
+    <button class="btn create-button" [routerLink]="['/create-employee']">Create New Developer</button>
+    <button class="btn show-button" [routerLink]="['/employees']">Show All Developers</button>
+  </div>
+  <div *ngIf="employees && employees.length">
+    <table class="table table-bordered table-sm mt-2">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Years of Experience</th>
+          <th>Skills</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{employee.firstName}}</td>
+          <td>{{employee.lastName}}</td>
+          <td>{{employee.emailId}}</td>
+          <td>{{employee.experience}}</td>
+          <td>{{employee.skills}}</td>
+          <td>
+            <button (click)="updateEmployee(employee.id)" class="btn btn-primary">Update</button>
+            <button (click)="deleteEmployee(employee.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+            <button (click)="employeeDetails(employee.id)" class="btn btn-primary" style="margin-left: 10px">View</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
